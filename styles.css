@@ -102,6 +102,8 @@ body{
     transition: 1s;
     font-weight: 600;
     color: transparent;
+    border-radius: 10px;
+    border-style: inset;
 }
 
 .img-text-wrapper:hover .subtitle{
