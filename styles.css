@@ -141,3 +141,9 @@ body{
 .profile-content-wrapper{
     padding: 30px;
 }
+
+.profile-content-wrapper p{
+    text-align: justify;
+    padding-top: 50px;
+    padding-right: 50px;
+}
