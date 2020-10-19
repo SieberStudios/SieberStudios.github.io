@@ -1,6 +1,7 @@
 /* Master Styles */
 
 body{
+    font-family: "Roboto", sans-serif;
     margin: 0px;
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url(images/Background/SieberStudios.png);
@@ -33,9 +34,9 @@ body{
 }
 
 .nav-wrapper > .left-side > div{
-        margin-right: 20px;
-        font-size: 0.9em;
-        text-transform: uppercase;
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
 }
 
 .nav-wrapper > .right-side > div{
@@ -62,6 +63,14 @@ body{
 
 .nav-link-wrapper a:hover{
     color: gray;
+}
+
+.active-nav-link{
+    border-bottom: 1px solid gray;
+}
+
+.active-nav-link a{
+    color: gray !important;
 }
 
 /* Portfolio Styles */
@@ -116,4 +125,19 @@ body{
 .img-darken{
     transition: 1s;
     filter: brightness(10%);
+}
+
+/* About Page Styles */
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+    width: 100%;
+}
+
+.profile-content-wrapper{
+    padding: 30px;
 }
