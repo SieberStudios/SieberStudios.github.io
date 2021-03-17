@@ -6,14 +6,14 @@ function preload(){
 
 function setup() {
     createCanvas(windowWidth,windowHeight);
+    fill(255);
     textSize(32);
-    textAlign(CENTER, CENTER);
+    textAlign(CENTER,CENTER);
+    text("Hello World", 200, 100);
 }
 
 function draw() {
     //background(0);
-    fill(255);
-    text("Hello World!", 200, 100);
     imageMode(CENTER);
     image(img, width/2,height/2);
 }

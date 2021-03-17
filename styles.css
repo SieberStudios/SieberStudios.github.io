@@ -6,7 +6,7 @@ body{
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url(images/Background/SieberStudios.png);
     background-color: black;
-    /* height: 900px; */
+    height: 1000px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,7 +135,7 @@ body{
 }
 
 .profile-image-wrapper img{
-    width: 100%;
+    width: 70%;
 }
 
 .profile-content-wrapper{
