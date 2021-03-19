@@ -1,7 +1,13 @@
 let vid;
 
+var c1, c2;
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
+
+    c2 = color(106,161,33);
+    c1 = color(0);
+    setGradient(c1,c2);
 
     vid = createVideo(['videos/ScenicSprintVid.mp4', 'ScenicSprintVid.wmv']);
     vid.hide();
@@ -10,7 +16,6 @@ function setup() {
 }
 
 function draw(){
-    background(0);
     text('Click me to play video', 750, 400);
     image(vid, 300, 100, 1280, 720);
 }
@@ -22,6 +27,16 @@ function mousePressed(){
 function vidLoad(){
     vid.loop();
     vid.volume(0);
+}
+
+function setGradient(c1, c2){
+    noFill();
+    for(var i = 0; i < height; i++){
+        var inter = map(i, 0, height, 0, 1);
+        var c = lerpColor(c1, c2, inter);
+        stroke(c);
+        line(0,i,width,i);
+    }
 }
 
 function windowResized(){
