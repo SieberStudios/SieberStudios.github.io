@@ -21,10 +21,10 @@ function setup() {
 function draw(){
     text('Click me to play video', 750, 400);
     image(vid, 300, 100, 1280, 720);
-}
 
-function mousePressed(){
-    vidLoad();
+    if(mouseIsPressed && mouseY >= 100){
+        vidLoad();
+    }
 }
 
 function vidLoad(){
