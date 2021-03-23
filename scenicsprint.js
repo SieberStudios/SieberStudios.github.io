@@ -5,11 +5,14 @@ var c1, c2;
 function setup() {
     createCanvas(windowWidth, windowHeight);
 
-    c2 = color(106,161,33);
+    c2 = color(52,124,44);
     c1 = color(0);
     setGradient(c1,c2);
 
-    vid = createVideo(['videos/ScenicSprintVid.mp4', 'ScenicSprintVid.wmv']);
+    var mp4 = 'videos/ScenicSprintVid.mp4';
+    var wmv = 'videos/ScenicSprintVid.wmv'
+
+    vid = createVideo([mp4, wmv]);
     vid.hide();
     fill(255);
     textSize(30);
