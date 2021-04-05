@@ -19,8 +19,10 @@ function setup() {
 }
 
 function draw(){
-    text('Click me to play video', 750, 400);
-    image(vid, 300, 100, 1280, 720);
+    textAlign(CENTER, CENTER);
+    text('Click me to play video', width / 2, height / 2);
+    imageMode(CENTER);
+    image(vid, width/2, height/2, 1280, 720);
 
     if(mouseIsPressed && mouseY >= 100){
         vidLoad();
