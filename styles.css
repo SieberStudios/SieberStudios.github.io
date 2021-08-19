@@ -59,7 +59,7 @@ body{
 }
 
 .nav-link-wrapper:hover{
-    border-bottom: 1px solid gray;
+    /*border-bottom: 1px solid gray;*/
 }
 
 .nav-link-wrapper a:hover{
