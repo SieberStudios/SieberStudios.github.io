@@ -9,8 +9,8 @@ function setup() {
     c1 = color(0);
     setGradient(c1,c2);
 
-    var mp4 = 'videos/TunnelHeliVid.mp4';
-    var wmv = 'videos/TunnelHeliVid.wmv'
+    var mp4 = 'videos/DeeperDungeon.mp4';
+    var wmv = 'videos/DeeperDungeon.wmv'
 
     vid = createVideo([mp4, wmv]);
     vid.hide();
